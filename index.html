@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayman Ragab — UI/UX Designer</title>
+    <meta name="description"
+        content="Ayman Ragab is a UI/UX Designer focused on understanding user problems and turning them into clear, intuitive, and purposeful digital experiences.">
+    <meta name="keywords"
+        content="Ayman Ragab, UI UX Designer, Product Designer, User Research, Interaction Design, Minimal Portfolio">
+    <meta name="author" content="Ayman Ragab">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Ayman Ragab — UI/UX Designer">
+    <meta property="og:description"
+        content="Designing better experiences by understanding people. Explore case studies and UI/UX design work.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="./icons/fav-2.svg">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+
+    <!-- Fonts: Plus Jakarta Sans & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Tajawal:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F8F3E9',
+                        dark: '#000000',
+                        neutralBorder: '#E2DDD5',
+                        mutedText: '#5A5853',
+                        softCard: '#F0ECE3'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar & minimal visual enhancements */
+        body {
+            background-color: #F8F3E9;
+            color: #000000;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1.edit-1 {
+            line-height: 1.3;
+        }
+
+        h1 .edit-2 {
+            background-color: #000000 !important;
+            color: #F8F3E9 !important;
+        }
+
+        .tamayoz-bg {
+            background: radial-gradient(ellipse at 82% 22%, rgba(0, 168, 175, .23), transparent 38%), radial-gradient(ellipse at 8% 100%, rgba(0, 168, 175, .15), transparent 35%), linear-gradient(125deg, #00383C 0%, #00585D 53%, #00767A 100%);
+            width: 80%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .tamayoz-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 180px;
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 48px;
+        }
+
+        .tamayoz-logo img {
+            width: 100%;
+        }
+
+        /* .tamayoz-bg::before {
+            width: 210px;
+            height: 210px;
+            top: -30px;
+            inset-inline-end: -50px;
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 50%;
+        }
+
+        .tamayoz-bg::after {
+            width: 180px;
+            height: 180px;
+            top: -40px;
+            inset-inline-end: -60px;
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 50%;
+        } */
+
+        .tamayoz-bg::before {
+            width: 300px;
+            height: 300px;
+            top: -40px;
+            inset-inline-end: -60px;
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 50%;
+        }
+
+        .tamayoz-bg::after {
+            width: 250px;
+            height: 250px;
+            top: -40px;
+            inset-inline-end: -60px;
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 50%;
+        }
+
+        .comet-bg {
+            background-image: url(./media/Comet\ sky\ bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 80%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .comet-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 180px;
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 48px;
+        }
+
+        .comet-logo img {
+            width: 100%;
+        }
+
+        .lykos-bg {
+            background-color: #152620;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .lykos-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 180px;
+            background-color: transparent;
+            border-radius: 8px;
+            padding: 48px;
+        }
+
+        .lykos-logo img {
+            width: 80%;
+        }
+
+        .case-details {
+            height: 100%;
+        }
+
+        .ar-logo img {
+            max-width: 80%;
+        }
+
+        .footer-logo {
+            width: 32px;
+        }
+
+        .fa-whatsapp {
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        ::selection {
+            background-color: #000000;
+            color: #F8F3E9;
+        }
+
+        .border-thin {
+            border-color: #E2DDD5;
+        }
+
+        /* Subtle luxury transitions */
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Image reveal zoom effect */
+        .img-zoom-container {
+            overflow: hidden;
+        }
+
+        .img-zoom-container img {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .img-zoom-container:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Modal backdrop transition */
+        .modal-active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-inactive {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Responsive Modal Content Container */
+        #case-study-modal-body {
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #000000 #F8F3E9;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8F3E9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #222222;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-cream text-dark antialiased min-h-screen flex flex-col justify-between selection:bg-dark selection:text-cream">
+
+    <!-- NAVIGATION BAR -->
+    <header
+        class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-neutralBorder transition-all duration-300"
+        id="main-header">
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" onclick="navigateTo('home')"
+                class="text-2xl sm:text-3xl font-extrabold tracking-tighter hover:opacity-70 transition-opacity ar-logo">
+                <img src="./icons/logo.svg" alt="">
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <button onclick="navigateTo('home')"
+                    class="nav-link text-dark hover:text-mutedText transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full after:transition-all">Home</button>
+                <button onclick="navigateTo('about')"
+                    class="nav-link text-dark hover:text-mutedText transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full after:transition-all">About</button>
+                <button onclick="navigateTo('process')"
+                    class="nav-link text-dark hover:text-mutedText transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full after:transition-all">Process</button>
+                <button onclick="navigateTo('work')"
+                    class="nav-link text-dark hover:text-mutedText transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full after:transition-all">Work</button>
+                <button onclick="navigateTo('contact')"
+                    class="nav-link text-dark hover:text-mutedText transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-dark hover:after:w-full after:transition-all">Contact</button>
+            </nav>
+
+
+            <!-- Subtle Navbar CTA -->
+            <div class="hidden md:flex items-center">
+                <button onclick="window.open('https://wa.me/201035599163', '_blank')"
+                    class="px-5 py-2.5 rounded-full border border-dark text-xs font-semibold uppercase tracking-widest hover:bg-dark hover:text-cream transition-all duration-300">
+                    Let’s Talk
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu"
+                class="md:hidden p-2 text-dark focus:outline-none">
+                <img src="./icons/burger.svg" alt="">
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-cream border-b border-neutralBorder px-6 py-8 transition-all duration-300">
+            <nav class="flex flex-col space-y-6 text-lg font-medium">
+                <button onclick="navigateTo('home'); toggleMobileMenu();"
+                    class="text-left py-1 text-dark border-b border-neutralBorder/40">Home</button>
+                <button onclick="navigateTo('about'); toggleMobileMenu();"
+                    class="text-left py-1 text-dark border-b border-neutralBorder/40">About</button>
+                <button onclick="navigateTo('process'); toggleMobileMenu();"
+                    class="text-left py-1 text-dark border-b border-neutralBorder/40">Process</button>
+                <button onclick="navigateTo('work'); toggleMobileMenu();"
+                    class="text-left py-1 text-dark border-b border-neutralBorder/40">Work</button>
+                <button onclick="navigateTo('contact'); toggleMobileMenu();"
+                    class="text-left py-1 text-dark border-b border-neutralBorder/40">Contact</button>
+            </nav>
+            <div class="mt-8 pt-4">
+                <button onclick="window.open('https://wa.me/201035599163', '_blank'); toggleMobileMenu();"
+                    class="w-full text-center px-6 py-3 rounded-full border border-dark text-xs font-semibold uppercase tracking-widest bg-dark text-cream">
+                    Let’s Talk
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative pt-16 pb-20 sm:pt-24 sm:pb-32 border-b border-neutralBorder">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <!-- Editable Availability Tag -->
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-neutralBorder text-xs font-medium text-mutedText bg-softCard mb-8 sm:mb-12">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                    <span>Available for select opportunities</span>
+                </div>
+
+                <!-- Editorial Headline -->
+                <h1
+                    class=" edit-1 text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.12] text-dark max-w-5xl mb-8">
+                    Designing better experiences by <span
+                        class="font-bold edit-2 decoration-neutralBorder underline-offset-8">understanding
+                        people</span>.
+                </h1>
+
+                <!-- Supporting Paragraph -->
+                <p class="text-lg sm:text-xl md:text-2xl font-normal text-mutedText max-w-3xl leading-relaxed mb-12">
+                    I’m Ayman Ragab, a UI/UX Designer who enjoys understanding problems, exploring user needs, and
+                    designing digital experiences that are intuitive, useful, and visually clear.
+                </p>
+
+                <!-- Action CTAs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 pt-4">
+                    <button onclick="navigateTo('work')"
+                        class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-dark text-cream font-medium text-sm tracking-wide hover:bg-neutral-800 transition-all duration-300">
+                        Explore My Work
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                        </svg>
+                    </button>
+                    <button onclick="navigateTo('contact')"
+                        class="inline-flex items-center justify-center px-8 py-4 rounded-full border border-dark text-dark font-medium text-sm tracking-wide hover:bg-dark hover:text-cream transition-all duration-300">
+                        Get in Touch
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-24 border-b border-neutralBorder">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                    <!-- Left Column: Biography -->
+                    <div class="lg:col-span-7">
+                        <span class="text-xs uppercase tracking-widest font-bold text-mutedText block mb-3">About
+                            Me</span>
+                        <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-dark mb-8 leading-tight">
+                            Curious about people. Focused on solving problems.
+                        </h2>
+
+                        <div class="space-y-6 text-mutedText text-base sm:text-lg leading-relaxed">
+                            <p>
+                                I’m Ayman Ragab, a UI/UX Designer driven by a genuine curiosity for how people interact
+                                with digital products. My goal is to make software feel natural, clear, and easy to
+                                navigate.
+                            </p>
+                            <p>
+                                Rather than jumping straight into visuals, I start by asking thoughtful questions about
+                                the problem at hand. Who is this for? What obstacle are they trying to overcome? How can
+                                we reduce friction while fulfilling business goals?
+                            </p>
+                            <p>
+                                I believe design is a continuous process of learning, testing, and refining—striving for
+                                functional simplicity without sacrificing aesthetic craftsmanship.
+                            </p>
+                        </div>
+
+                        <!-- Principles summary -->
+                        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 border-t border-neutralBorder">
+                            <div>
+                                <h4 class="font-bold text-dark mb-2">User-Centered Focus</h4>
+                                <p class="text-xs text-mutedText leading-relaxed">Prioritizing clarity, usability, and
+                                    empathy in every workflow decision.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-2">Intentional Aesthetics</h4>
+                                <p class="text-xs text-mutedText leading-relaxed">Clean typography, balanced spacing,
+                                    and purposeful visual hierarchy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Accordion / Skills & Tools -->
+                    <div class="lg:col-span-5 bg-softCard p-8 rounded-2xl border border-neutralBorder h-fit">
+                        <h3 class="text-xl font-bold text-dark mb-6 pb-4 border-b border-neutralBorder">
+                            Capabilities & Toolkit
+                        </h3>
+
+                        <!-- Category: UX Design -->
+                        <div class="mb-6">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-3">User Experience
+                                (UX)</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">UX
+                                    Research</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">UX
+                                    Strategy</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">UX
+                                    Audit</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Information
+                                    Architecture</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">User
+                                    Flows</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Wireframing</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Usability
+                                    Testing</span>
+                            </div>
+                        </div>
+
+                        <!-- Category: UI Design -->
+                        <div class="mb-6">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-3">User Interface
+                                (UI)</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Interface
+                                    Design</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Responsive
+                                    Web Design</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Prototyping</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Design
+                                    Systems</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Micro-interactions</span>
+                            </div>
+                        </div>
+
+                        <!-- Category: Tools -->
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-3">Tools & Software
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Figma</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">FigJam</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">Miro</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">InVision</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">UX
+                                    Tweak</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">HTML</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">
+                                    CSS</span>
+                                <span
+                                    class="px-3 py-1.5 rounded-md bg-cream border border-neutralBorder text-xs font-medium text-dark">
+                                    Bootstrap</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN PROCESS SECTION -->
+        <section id="process" class="py-24 border-b border-neutralBorder bg-cream">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <!-- Section Header -->
+                <div class="mb-16 pb-6 border-b border-neutralBorder max-w-3xl">
+                    <span
+                        class="text-xs uppercase tracking-widest font-bold text-mutedText block mb-3">Methodology</span>
+                    <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-dark mb-4">How I Approach Design
+                    </h2>
+                    <p class="text-mutedText text-base leading-relaxed">
+                        A structured, human-centered framework to ensure every design decision aligns with real user
+                        needs and project goals.
+                    </p>
+                </div>
+
+                <!-- 4-Step Process Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div
+                        class="p-8 rounded-2xl bg-softCard border border-neutralBorder flex flex-col justify-between hover-lift">
+                        <div>
+                            <span class="text-3xl font-extrabold text-dark tracking-tight block mb-6">01</span>
+                            <h3 class="text-xl font-bold text-dark mb-3">Understand</h3>
+                            <p class="text-mutedText text-sm leading-relaxed">
+                                Explore the core problem, business context, and user needs through qualitative inquiry,
+                                research, and analysis.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-neutralBorder/60 text-xs text-mutedText">
+                            Focus: Research & Context
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div
+                        class="p-8 rounded-2xl bg-softCard border border-neutralBorder flex flex-col justify-between hover-lift">
+                        <div>
+                            <span class="text-3xl font-extrabold text-dark tracking-tight block mb-6">02</span>
+                            <h3 class="text-xl font-bold text-dark mb-3">Define</h3>
+                            <p class="text-mutedText text-sm leading-relaxed">
+                                Identify key friction points, clarify core requirements, synthesise insights, and
+                                establish a well-defined direction.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-neutralBorder/60 text-xs text-mutedText">
+                            Focus: IA & Strategy
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                        class="p-8 rounded-2xl bg-softCard border border-neutralBorder flex flex-col justify-between hover-lift">
+                        <div>
+                            <span class="text-3xl font-extrabold text-dark tracking-tight block mb-6">03</span>
+                            <h3 class="text-xl font-bold text-dark mb-3">Design</h3>
+                            <p class="text-mutedText text-sm leading-relaxed">
+                                Translate structured insights into clear user flows, wireframes, high-fidelity
+                                interfaces, and interactive prototypes.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-neutralBorder/60 text-xs text-mutedText">
+                            Focus: UI & Prototyping
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div
+                        class="p-8 rounded-2xl bg-softCard border border-neutralBorder flex flex-col justify-between hover-lift">
+                        <div>
+                            <span class="text-3xl font-extrabold text-dark tracking-tight block mb-6">04</span>
+                            <h3 class="text-xl font-bold text-dark mb-3">Validate</h3>
+                            <p class="text-mutedText text-sm leading-relaxed">
+                                Review design choices, evaluate usability when feasible, gather feedback, and
+                                iteratively refine the experience.
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-neutralBorder/60 text-xs text-mutedText">
+                            Focus: Testing & Iteration
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECTED WORK SECTION -->
+        <section id="work" class="py-24 border-b border-neutralBorder">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <!-- Section Header -->
+                <div
+                    class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-neutralBorder">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest font-bold text-mutedText block mb-3">Portfolio
+                            Showcase</span>
+                        <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-dark">Selected Work</h2>
+                    </div>
+                    <p class="text-mutedText max-w-md text-base mt-4 md:mt-0 leading-relaxed">
+                        A selection of projects exploring user problems, design decisions, and digital experiences.
+                    </p>
+                </div>
+
+                <!-- Projects Grid / Editorial Layout -->
+                <div class="space-y-24">
+
+                    <!-- PROJECT ENTRY 1 -->
+                    <article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-7 img-zoom-container rounded-2xl border border-neutralBorder bg-softCard overflow-hidden cursor-pointer"
+                            onclick="openCaseStudy(0)">
+
+                            <div class="w-full h-[320px] sm:h-[420px] object-cover" viewBox="0 0 800 500" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- <rect width="800" height="500" fill="#EAE5DC" /> -->
+                                <!-- UI Graphic Mockup Placeholder -->
+                                <!-- <rect x="80" y="60" width="640" height="380" rx="16" fill="#F8F3E9" stroke="#D1CBC1"
+                                    stroke-width="2" /> -->
+                                <!-- <rect aria-placeholder="Hello" x="110" y="90" width="220" height="24" rx="6"
+                                    fill="#000000" /> -->
+
+                                <!-- <rect x="110" y="130" width="340" height="12" rx="4" fill="#88827A" />
+                                <rect x="110" y="150" width="280" height="12" rx="4" fill="#C2BBB0" /> -->
+                                <!-- Cards inside wireframe representation -->
+                                <!-- <rect x="110" y="190" width="180" height="210" rx="12" fill="#FFFFFF"
+                                    stroke="#E2DDD5" />
+                                <rect x="310" y="190" width="180" height="210" rx="12" fill="#FFFFFF"
+                                    stroke="#E2DDD5" />
+                                <rect x="510" y="190" width="180" height="210" rx="12" fill="#FFFFFF"
+                                    stroke="#E2DDD5" />
+                                <circle cx="150" cy="230" r="20" fill="#000000" />
+                                <rect x="180" y="225" width="80" height="10" rx="3" fill="#333" /> -->
+                                <div class=" comet-bg w-full h-[320px] sm:h-[420px] object-cover"
+                                    viewBox="0 0 800 500 p-lg-2" fill="none">
+                                    <div class="" x="120" y="60" rx="12" fill="#F8F3E9" stroke="#B8B2A6"
+                                        stroke-width="2">
+                                        <div class="comet-logo">
+                                            <img src="./icons/comet.svg" alt="" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex flex-col justify-center">
+                            <div
+                                class="flex items-center gap-3 mb-4 text-xs tracking-widest font-semibold uppercase text-mutedText">
+                                <span>Website</span>
+                                <span>•</span>
+                                <span>UX Research & UI Design & web development</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-dark mb-4">
+                                Comet— Creative House
+                            </h3>
+                            <p class="text-mutedText text-base leading-relaxed mb-6">
+                                Developed a cohesive digital experience that highlights the brand’s space-inspired
+                                identity through creative visuals and a distinctive design language.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">Design
+                                    System</span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">Information
+                                    Architecture</span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">User
+                                    Flows</span>
+                            </div>
+                            <div>
+                                <button onclick="openCaseStudy(0)"
+                                    class="inline-flex items-center text-sm font-bold tracking-wide text-dark hover:text-mutedText underline underline-offset-4 transition-all">
+                                    View Case Study
+                                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT ENTRY 2 -->
+                    <article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-5 lg:order-1 flex flex-col justify-center order-2">
+                            <div
+                                class="flex items-center gap-3 mb-4 text-xs tracking-widest font-semibold uppercase text-mutedText">
+                                <span>Website</span>
+                                <span>•</span>
+                                <span>UX research & UI design</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-dark mb-4">
+                                LYKOS - Shopify
+                            </h3>
+                            <p class="text-mutedText text-base leading-relaxed mb-6">
+                                Redesigned the Shopify shopping experience for an emerging fashion brand by simplifying
+                                user flows and streamlining the checkout process to reduce drop-offs and make purchasing
+                                faster and easier.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">E-commerce
+                                </span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">
+                                    UI Redesign</span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">
+                                    UX Audit</span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">Prototyping</span>
+                            </div>
+                            <div>
+                                <button onclick="openCaseStudy(1)"
+                                    class="inline-flex items-center text-sm font-bold tracking-wide text-dark hover:text-mutedText underline underline-offset-4 transition-all">
+                                    View Case Study
+                                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 lg:order-2 img-zoom-container rounded-2xl border border-neutralBorder bg-softCard overflow-hidden cursor-pointer order-1"
+                            onclick="openCaseStudy(1)">
+
+                            <div class=" lykos-bg w-full h-[320px] sm:h-[420px] object-cover"
+                                viewBox="0 0 800 500 p-lg-2" fill="none">
+                                <div class="" x="120" y="60" rx="12" fill="#F8F3E9" stroke="#B8B2A6" stroke-width="2">
+                                    <div class="lykos-logo">
+                                        <img src="./icons/lykos-3.svg" alt="" class="w-100 h-100">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <svg class="w-full h-[320px] sm:h-[420px] object-cover" viewBox="0 0 800 500" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="500" fill="#E2DDD5" />
+                                <rect x="60" y="40" width="680" height="420" fill="#F8F3E9" />
+                                <text x="100" y="120" font-family="Plus Jakarta Sans" font-weight="800" font-size="28"
+                                    fill="#000000">LYKOS STORE</text>
+                                <line x1="100" y1="150" x2="700" y2="150" stroke="#000000" stroke-width="1" />
+                                <rect x="100" y="180" width="360" height="220" fill="#D6CF23" />
+                                <rect x="100" y="180" width="360" height="220" fill="#1A1A1A" />
+                                <text x="120" y="370" font-family="Plus Jakarta Sans" font-size="12"
+                                    fill="#FFFFFF">PROJECT 01 / MONOLITH HOUSE</text>
+                                <rect x="490" y="180" width="210" height="100" fill="#C8C2B7" />
+                                <rect x="490" y="300" width="210" height="100" fill="#C8C2B7" />
+                            </svg> -->
+                        </div>
+                    </article>
+
+                    <!-- PROJECT ENTRY 3 -->
+                    <article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-7 img-zoom-container rounded-2xl border border-neutralBorder bg-softCard overflow-hidden cursor-pointer"
+                            onclick="openCaseStudy(2)">
+                            <!-- <svg class="w-full h-[320px] sm:h-[420px] object-cover" viewBox="0 0 800 500" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="500" fill="#DDD8CE" />
+                                <rect x="120" y="60" width="560" height="380" rx="12" fill="#F8F3E9" stroke="#B8B2A6"
+                                    stroke-width="2" />
+                                <circle cx="400" cy="180" r="45" fill="#000000" />
+                                <rect x="250" y="250" width="300" height="16" rx="4" fill="#000000" />
+                                <rect x="290" y="280" width="220" height="10" rx="3" fill="#666" />
+
+                                <rect x="200" y="320" width="400" height="48" rx="8" fill="#E2DDD5" />
+                                <rect x="320" y="334" width="160" height="20" rx="4" fill="#000000" />
+
+                            </svg> -->
+                            <!-- <div class="tamayoz-main tamayoz-bg w-full h-[320px] sm:h-[420px] object-cover"
+                                viewBox="0 0 800 500 p-lg-2" fill="none">
+                                <div class="tamayoz-bg" x="120" y="60" rx="12" fill="#F8F3E9" stroke="#B8B2A6"
+                                    stroke-width="2">
+                                    <div class="tamayoz-logo">
+                                        <img src="./icons/tamayoz-2.svg" alt="" class="w-100 h-100">
+                                    </div>
+
+                                </div>
+                            </div> -->
+
+                            <div class=" tamayoz-bg w-full h-[320px] sm:h-[420px] object-cover"
+                                viewBox="0 0 800 500 p-lg-2" fill="none">
+                                <div class="" x="120" y="60" rx="12" fill="#F8F3E9" stroke="#B8B2A6" stroke-width="2">
+                                    <div class="tamayoz-logo">
+                                        <img src="./icons/tamayoz-white.svg" alt="" class="w-100 h-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex flex-col justify-center">
+                            <div
+                                class="flex items-center gap-3 mb-4 text-xs tracking-widest font-semibold uppercase text-mutedText">
+                                <span>Website</span>
+                                <span>•</span>
+                                <span>UI design & Web development</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-dark mb-4">
+                                Tamayoz Alarkan — Environmental services company
+                            </h3>
+                            <p class="text-mutedText text-base leading-relaxed mb-6">
+                                The project aimed to deliver a simple, user-friendly website that meets users’ needs
+                                while showcasing national identity through a thoughtful and cohesive design. By
+                                combining intuitive navigation with a clean visual language, the design creates an
+                                accessible and engaging digital experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">Business
+                                    website
+                                </span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">UI
+                                    Design
+                                </span>
+                                <span
+                                    class="px-3 py-1 rounded-md bg-softCard border border-neutralBorder text-xs text-dark">Responsive
+                                    design</span>
+                            </div>
+                            <div>
+                                <button onclick="openCaseStudy(2)"
+                                    class="inline-flex items-center text-sm font-bold tracking-wide text-dark hover:text-mutedText underline underline-offset-4 transition-all">
+                                    View Case Study
+                                    <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 bg-cream">
+            <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+                <div class="max-w-3xl">
+                    <span class="text-xs uppercase tracking-widest font-bold text-mutedText block mb-3">Get in
+                        Touch</span>
+                    <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-dark mb-6">
+                        Have a problem worth solving? Let’s talk.
+                    </h2>
+                    <p class="text-mutedText text-base sm:text-lg leading-relaxed mb-12">
+                        I’m open to discussing UI/UX opportunities, design collaborations, and projects where thoughtful
+                        problem-solving can make a real difference.
+                    </p>
+
+                    <!-- Contact Form with Functional Mailto Fallback -->
+                    <form id="portfolio-contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="form-name"
+                                    class="block text-xs font-bold uppercase tracking-wider text-dark mb-2">Your
+                                    Name</label>
+                                <input type="text" id="form-name" required placeholder="Name"
+                                    class="w-full px-4 py-3.5 rounded-xl bg-softCard border border-neutralBorder text-dark placeholder:text-mutedText/60 focus:outline-none focus:border-dark transition-colors">
+                            </div>
+                            <div>
+                                <label for="form-email"
+                                    class="block text-xs font-bold uppercase tracking-wider text-dark mb-2">Your
+                                    Email</label>
+                                <input type="email" id="form-email" required placeholder="example@email.com"
+                                    class="w-full px-4 py-3.5 rounded-xl bg-softCard border border-neutralBorder text-dark placeholder:text-mutedText/60 focus:outline-none focus:border-dark transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="form-message"
+                                class="block text-xs font-bold uppercase tracking-wider text-dark mb-2">Message</label>
+                            <textarea id="form-message" rows="5" required
+                                placeholder="Tell me about your project, team, or opportunity..."
+                                class="w-full px-4 py-3.5 rounded-xl bg-softCard border border-neutralBorder text-dark placeholder:text-mutedText/60 focus:outline-none focus:border-dark transition-colors"></textarea>
+                        </div>
+
+                        <!-- Feedback Message Container -->
+                        <div id="form-status" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+                        <button type="submit"
+                            class="px-8 py-4 rounded-full bg-dark text-cream font-medium text-sm tracking-wide hover:bg-neutral-800 transition-all duration-300 inline-flex items-center justify-center">
+                            Send Message
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <!-- Direct Links -->
+                    <div class="mt-16 pt-10 border-t border-neutralBorder grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div>
+                            <span class="block text-xs font-bold uppercase tracking-wider text-mutedText mb-1">Direct
+                                Email</span>
+                            <a href="mailto:aymanrg1@gmail.com"
+                                class="text-sm font-semibold text-dark hover:underline">aymanrg1@gmail.com</a>
+                        </div>
+                        <div>
+                            <span
+                                class="block text-xs font-bold uppercase tracking-wider text-mutedText mb-1">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/ayman-ragab/" target="_blank" rel="noopener"
+                                class="text-sm font-semibold text-dark hover:underline">linkedin/aymanragab</a>
+                        </div>
+                        <div>
+                            <span
+                                class="block text-xs font-bold uppercase tracking-wider text-mutedText mb-1">Location</span>
+                            <span class="text-sm font-semibold text-dark">Egypt (UTC+3)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-neutralBorder py-12 bg-cream text-mutedText text-xs">
+        <div
+            class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="text-base font-extrabold text-dark tracking-tighter">
+                    <img class="footer-logo" src="./icons/logo.svg" alt="">
+                </span>
+                <span>© <span id="current-year">2026</span> Ayman Ragab. All rights reserved.</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#home" onclick="navigateTo('home')" class="hover:text-dark transition-colors">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CASE STUDY MODAL OVERLAY -->
+    <div id="case-study-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 modal-inactive transition-all duration-300 bg-dark/70 backdrop-blur-sm"
+        aria-hidden="true">
+        <div
+            class="case-details bg-cream rounded-2xl w-full max-w-5xl border border-neutralBorder shadow-2xl relative flex flex-col overflow-hidden transform transition-all duration-300">
+
+            <!-- Modal Header Sticky Bar -->
+            <div class="px-6 py-4 border-b border-neutralBorder flex items-center justify-between bg-cream z-10">
+                <div class="flex items-center space-x-3">
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest px-2.5 py-1 rounded bg-softCard border border-neutralBorder"
+                        id="modal-project-tag">Case Study</span>
+                    <h3 class="text-lg font-bold text-dark truncate max-w-xs sm:max-w-md" id="modal-project-title">
+                        Project Title</h3>
+                </div>
+                <button onclick="closeCaseStudy()" aria-label="Close modal"
+                    class="p-2 rounded-full hover:bg-softCard border border-transparent hover:border-neutralBorder transition-all text-dark">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content Body!!!!!!!!!!! important -->
+            <!-- <div id="case-study-modal-body" class="p-6 sm:p-10 space-y-12"> -->
+            <!-- Case Study Content Injected Dynamically -->
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="px-6 py-4 border-t border-neutralBorder bg-cream flex justify-between items-center">
+            <span class="text-xs text-mutedText">Ayman Ragab — UI/UX Portfolio</span>
+            <button onclick="closeCaseStudy()"
+                class="px-5 py-2 rounded-full bg-dark text-cream text-xs font-semibold uppercase tracking-wider">Close
+                View</button>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        // Set dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Navigation Helper
+        function navigateTo(sectionId) {
+            const el = document.getElementById(sectionId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const hamburger = document.getElementById('hamburger-icon');
+            const close = document.getElementById('close-icon');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                hamburger.classList.add('hidden');
+                close.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                hamburger.classList.remove('hidden');
+                close.classList.add('hidden');
+            }
+        }
+
+        // Contact Form Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const message = document.getElementById('form-message').value;
+            const status = document.getElementById('form-status');
+
+            // Construct mailto link as direct fallback
+            const mailtoUri = `mailto:aymanrg1@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
+
+            status.classList.remove('hidden', 'bg-red-100', 'text-red-800');
+            status.classList.add('bg-emerald-100', 'text-emerald-800');
+            status.innerHTML = `Thank you, ${name}! Your draft email client is opening, or you can send directly to <strong>aymanrg1@gmail.com</strong>.`;
+
+            // Trigger mailto link
+            window.location.href = mailtoUri;
+        }
+
+        // Case Studies Data Structure
+        const caseStudiesData = [
+            {
+                tag: "Mobile App • UI/UX",
+                title: "KETS Commerce — Frictionless Mobile Checkout Flow",
+                overview: "KETS is an e-commerce platform facing notable mobile cart abandonment rates during final payment selection. The goal was to audit the existing user flow, eliminate cognitive overload, and introduce a streamlined checkout experience.",
+                problem: "Users experienced decision fatigue caused by redundant fields, unclear shipping calculations early in the process, and an overwhelming number of payment methods displayed without hierarchy.",
+                role: "Sole UI/UX Designer leading problem definition, user wireframing, component design, and interactive prototyping.",
+                goals: [
+                    "Reduce step count during checkout from 5 pages to a 2-step modular accordian",
+                    "Improve checkout clarity with transparent price breakdowns",
+                    "Establish a clean visual hierarchy adhering to mobile ergonomics"
+                ],
+                research: "Usability testing on 6 participants highlighted that 80% lost momentum when asked to create an account before seeing final shipping fees. Simplifying to a guest-first option with upfront costs resolved main hesitation points.",
+                wireframes: "Created low-fidelity user flow wireframes focusing on thumb-zone navigation, single-tap payment options (Apple Pay/Google Pay), and inline form validation.",
+                uiDesign: "Built a high-contrast visual system using neutral shades, clean typography (Plus Jakarta Sans), and large touch targets (minimum 48px height).",
+                learnings: "Simplifying a flow often requires removing features rather than adding visual elements. Streamlining friction is the most impactful UI optimization."
+            },
+            {
+                tag: "Web Platform • Concept Project",
+                title: "Axis Architectural Studio Platform",
+                overview: "Axis Studio is a conceptual architecture platform designed to highlight high-end physical structures through an editorial digital medium.",
+                problem: "Traditional architecture portfolios often suffer from chaotic image grids and dense text blocks that distract from project photography and spatial context.",
+                role: "Concept UI/UX Designer & Art Director",
+                goals: [
+                    "Design an asymmetrical editorial layout with spacious margins",
+                    "Integrate structured project metadata (Location, Area, Materials) cleanly",
+                    "Maintain seamless responsive scaling from large displays to mobile phones"
+                ],
+                research: "Analyzed leading architectural and editorial publications to understand visual hierarchy standards, typographic scale ratios, and image aspect ratio balance.",
+                wireframes: "Developed flexible spatial layout grids where image containers scale proportionally without cropping architectural line-work.",
+                uiDesign: "Implemented a rich typography pairing with generous white space, custom progress indicators, and quiet neutral borders.",
+                learnings: "Minimalism requires rigorous discipline in typography and grid alignment; when visual clutter is removed, alignment flaws become obvious."
+            },
+            {
+                tag: "SaaS Workspace • UX Strategy",
+                title: "Pulse — Task Analytics & Focus Workspace",
+                overview: "Pulse is a conceptual SaaS platform designed for individual contributors and small teams needing clear task management without corporate bloat.",
+                problem: "Existing product management software often bombards users with complex sidebars, notifications, and dense charts, causing task anxiety.",
+                role: "UI/UX Designer leading UX Audit, IA restructuring, and Design System components.",
+                goals: [
+                    "Simplify dashboard home to display only 'Focus Today' tasks",
+                    "Reduce visual noise by hiding secondary analytics behind contextual drawers",
+                    "Standardize reusable Figma component design tokens"
+                ],
+                research: "Audit of common dashboard frameworks revealed that over 60% of dashboard screen space is rarely interacted with during active work sessions.",
+                wireframes: "Drafted contextual side-sheets and expandable cards to keep users focused on single task execution.",
+                uiDesign: "Applied a clean cream-and-dark aesthetic with subtle status accents to highlight priority levels without visually shouting.",
+                learnings: "Designing for productivity means designing for peace of mind. Every interface element should serve a clear functional purpose."
+            }
+        ];
+
+        // Open Case Study Modal Function
+        function openCaseStudy(index) {
+            const data = caseStudiesData[index];
+            if (!data) return;
+
+            document.getElementById('modal-project-tag').textContent = data.tag;
+            document.getElementById('modal-project-title').textContent = data.title;
+
+            const modalBody = document.getElementById('case-study-modal-body');
+            modalBody.innerHTML = `
+                <!-- Overview & Problem -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8 border-b border-neutralBorder">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">01. Overview</h4>
+                        <p class="text-dark text-base leading-relaxed">${data.overview}</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">02. Problem Statement</h4>
+                        <p class="text-dark text-base leading-relaxed">${data.problem}</p>
+                    </div>
+                </div>
+
+                <!-- Role & Goals -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-neutralBorder">
+                    <div class="md:col-span-4">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">My Role</h4>
+                        <p class="text-dark text-sm font-medium leading-relaxed">${data.role}</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">Project Goals</h4>
+                        <ul class="list-disc list-inside space-y-2 text-dark text-sm leading-relaxed">
+                            ${data.goals.map(g => `<li>${g}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Research & Strategy -->
+                <div class="space-y-4 pb-8 border-b border-neutralBorder">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText">03. Research & Insights</h4>
+                    <p class="text-dark text-base leading-relaxed">${data.research}</p>
+                </div>
+
+                <!-- UX & Visual Design -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8 border-b border-neutralBorder">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">04. Wireframes & UX Strategy</h4>
+                        <p class="text-dark text-sm leading-relaxed">${data.wireframes}</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">05. UI Design & System</h4>
+                        <p class="text-dark text-sm leading-relaxed">${data.uiDesign}</p>
+                    </div>
+                </div>
+
+                <!-- Key Learnings -->
+                <div class="p-6 rounded-xl bg-softCard border border-neutralBorder">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-mutedText mb-2">Key Takeaways & Reflection</h4>
+                    <p class="text-dark text-sm leading-relaxed font-medium">${data.learnings}</p>
+                </div>
+            `;
+
+            const modal = document.getElementById('case-study-modal');
+            modal.classList.remove('modal-inactive');
+            modal.classList.add('modal-active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Case Study Modal Function
+        function closeCaseStudy() {
+            const modal = document.getElementById('case-study-modal');
+            modal.classList.remove('modal-active');
+            modal.classList.add('modal-inactive');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on Escape key press
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeCaseStudy();
+            }
+        });
+
+        // Close modal when clicking on backdrop
+        document.getElementById('case-study-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeCaseStudy();
+            }
+        });
+    </script>
+</body>
+
+</html>
